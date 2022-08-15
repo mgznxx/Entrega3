@@ -1,0 +1,270 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+.imgLogo {
+    margin-left: 40px;
+}
+
+div .container {
+    margin-bottom: 200px;
+}
+
+.hero {
+    width: 100%;
+    min-height: 100vh;
+
+    /*background-image: url(../images/primeraF.jpg);
+    background-color: rgb(50, 40, 95);
+    opacity: 0.9;*/
+    background-position: center;
+    background-size: cover;
+    padding: 0px 5%;
+    overflow: hidden;
+    position: relative;
+}
+nav {
+    padding: 10px 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logo {
+    width: 140px;
+}
+
+nav ul li {
+    display: inline-block;
+    list-style: none;
+    margin: 10px 15px;
+    font-size: 18px;
+}
+h1.txtFormulario {
+    font-size: 30px;
+    font-weight: 600;
+    padding-left: 10px;
+    color: rgb(209, 142, 53);
+}
+
+#nombre.control #apellido.control #email.control #mensaje.control {
+    font-size: 14px;
+    padding-bottom: 5px;
+}
+
+h1.txtCursos {
+    font-size: 50px;
+    font-weight: bold;
+    padding-left: 30px;
+    color: white;
+}
+/*:::: CONTACTO ::::*/
+
+.fondo {
+    background-image: url(../images/0055.jpg);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-color: rgba(0, 0, 0, 0.3);
+    width: 400px;
+    padding: 20px 20px 10px 10px;
+    margin: auto;
+    margin-top: 10px;
+    border-radius: 10px;
+    font-family: 'Roboto', sans-serif;
+    color: rgb(41, 3, 3);
+    box-shadow: 7px 13px 37px #000;
+}
+.formulario {
+    width: 500px;
+    height: 100vh;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(245, 218, 182);
+}
+form .formulario {
+    justify-content: center;
+    align-items: center;
+}
+
+.container2 {
+    background-size: cover;
+}
+.content {
+    margin-top: 10%;
+
+    /*max-width: 600px;*/
+
+    h1 {
+    font-size: 70px;
+    color: rgb(245, 245, 248);
+    font-weight: bold;
+    }
+
+    p {
+    margin: 10px 0 30px;
+    color: rgb(245, 239, 239);
+    animation-delay: 0.5s;
+    }
+
+    .btn {
+    padding: 15px 80px;
+    font-size: 16px;
+    animation-delay: 1s;
+    }
+}
+/*:::: Imagen Hero ::::*/
+
+.feature-img {
+    width: 35rem;
+    position: absolute;
+    bottom: 0;
+    right: 5px;
+}
+
+h1.anim {
+    font-size: 70px;
+    font-weight: bold;
+}
+
+p.anim {
+    font-size: 20px;
+}
+
+.feature-img.anim {
+    animation-delay: 2s;}
+
+.anim {
+    opacity: 0;
+    transform: translateY(30px);
+    animation: moveup 0.5s linear forwards;
+    padding-left: 15px;
+}
+
+@keyframes moveup {
+    100% {
+    opacity: 1;
+    transform: translateY(0px);
+    }
+}
+/*CARD SALUD*/
+
+.container card salud {
+    display: flex;
+}
+
+.texto salud {
+    width: 50%;
+    text-align: justify;
+    padding: 0px 30px;
+}
+
+img.imgRedonda {
+    width: 100px;
+    border-radius: 50%;
+}
+div.parrafo {
+    color: white;
+    padding: 0px 10px 0px 50px;
+}
+
+/*:::::::::::::::::::Media Queries::::::::::::::::::*/
+
+/*:::::: Mobile ::::::*/
+@media (max-width: 576px) {
+    .hero.content {
+    background-image: url(../images/primera.png);
+    width: 30%;
+    opacity: 1;
+    }
+    img {
+        margin-left: 0px;
+    }
+    
+    .imgLogo {
+        margin-left: 10px;
+    }
+    
+    .feature-img {
+        display: none;
+    }
+    h1 {
+        &.txtCursos {
+        font-size: 30px;
+        font-weight: bold;
+        padding-left: 30px;
+        color: white;
+        }
+    
+        &.anim {
+        font-size: 40px;
+        font-weight: bold;
+        opacity: 1;
+        }
+    }
+    
+    p.anim {
+        font-size: 16px;
+    }
+    .foot {
+        align-self: center;
+        justify-items: center;
+    }
+    
+    div.parrafo {
+        color: white;
+        padding: 0px 10px 0px 30px;
+    }
+    
+    .texto salud {
+        width: 80%;
+        text-align: justify;
+        padding: 0px 30px;
+    }
+    
+    .fondo {
+        width: 300px;
+    }
+}
+
+/*:::::: TABLET ::::::*/
+
+@media (max-width: 768px) {
+    .feature-img {
+    width: 50%;
+    object-fit: contain;
+    }
+    p.anim {
+        font-size: 16px;
+    }
+    
+    nav ul li {
+        display: inline-block;
+        list-style: none;
+        margin: 10px 8px;
+        font-size: 13px;
+    }
+    
+    .foot {
+        font-size: 14px;
+    }
+    h1.txtCursos {
+        font-size: 40px;
+        font-weight: bold;
+        padding-left: 30px;
+        color: white;
+    }
+}
+
+@media (max-width: 1024px) {
+    .feature-img {
+    width: 45%;
+    object-fit: contain;
+    }
+}
+
+
+
+
+
